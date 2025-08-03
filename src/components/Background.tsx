@@ -1,6 +1,7 @@
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Points, PointMaterial } from "@react-three/drei";
-import { useMemo, type FC } from "react";
+import { useMemo } from "react";
+import type { FC } from "react";
 
 const Background: FC = () => {
   const sphere: Float32Array = useMemo(() => {
@@ -29,6 +30,6 @@ const Background: FC = () => {
       </Canvas>
     </div>
   );
-}
+};
 
 export default Background;

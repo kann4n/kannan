@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
-import { FC } from "react";
+import type { FC } from "react";
 
 const Hero: FC = () => {
   return (
-    <section className="flex flex-col items-center justify-center min-h-screen px-6 text-center text-white">
+    <section className="flex min-h-screen flex-col items-center justify-center px-6 text-center text-white">
       <motion.h1
-        className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-tight"
+        className="text-4xl leading-tight font-extrabold tracking-tight sm:text-5xl md:text-6xl"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -17,15 +17,16 @@ const Hero: FC = () => {
         Aravind K.B
       </motion.h1>
       <motion.p
-        className="mt-4 text-base sm:text-lg text-gray-300 max-w-md"
+        className="mt-4 max-w-md text-base text-gray-300 sm:text-lg"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 0.9 }}
       >
-        Creative Coder · Building immersive experiences with React, Three.js & Motion.
+        Creative Coder · Building immersive experiences with React, Three.js &
+        Motion.
       </motion.p>
     </section>
   );
-}
+};
 
 export default Hero;

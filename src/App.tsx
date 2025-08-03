@@ -3,7 +3,7 @@ import Background from "./components/Background";
 
 function App() {
   return (
-    <div className="relative w-full h-screen bg-black overflow-hidden">
+    <div className="relative h-screen w-full overflow-hidden bg-black">
       <Background />
       <Hero />
     </div>
